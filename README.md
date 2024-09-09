@@ -5,21 +5,9 @@
 Сервер и документация: ЭСОНО МАНГЕ САМУЭЛЬ MBA
 # ДОКУМЕНТЫ
 # диаграмма классов сервер
-![image](https://github.com/user-attachments/assets/3f63945b-353c-455e-91f7-8eb98ff64256)
-# диаграмма классов клиента
-![image](https://github.com/user-attachments/assets/f3902cba-7e04-42af-8668-cb05818e8ca0)
+![image](https://github.com/user-attachments/assets/40f95250-7303-49f6-94d6-97004cdd198c)
 # Usecase
-![image](https://github.com/user-attachments/assets/0e892c42-793b-42e7-9865-80852da481a5)
-# Структура репозитория
-![image](https://github.com/user-attachments/assets/20ed0d42-4be6-4daa-8bb9-1f4daeb2a650)
-ветка main: последние рабочие версии;  Есоно манге
-
-ветка current_server_client: текущие, не протестированные версии;  Есоно манге
-
-ветка server_misha: файлы сервера; Есоно манге
-
-ветка documents: документация, Есоно манге
-
+![diagrama_clases_sistema_cliente_empleado](https://github.com/user-attachments/assets/c1b0bc70-4a65-4381-9038-f0f3bd799568)
 ## ХОД РАБОТЫ:
 # 10.06- 16.06
 ## WIKI - ЭСОНО МАНГЕ
