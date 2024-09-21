@@ -1,15 +1,30 @@
 # Дисциплинарный проект «Технологии программирования"
 ## участники
 # ЭСОНО МАНГЕ САМУЭЛЬ MBA
-# Хасан Мохаммад
+# Хасан Мохаммад 
 Сервер и документация: ЭСОНО МАНГЕ САМУЭЛЬ MBA
 # ДОКУМЕНТЫ
-# диаграмма классов сервер
+### диаграмма классов сервер
 ![image](https://github.com/user-attachments/assets/40f95250-7303-49f6-94d6-97004cdd198c)
-# Usecase
-![diagrama_clases_sistema_cliente_empleado](https://github.com/user-attachments/assets/c1b0bc70-4a65-4381-9038-f0f3bd799568)
+### Usecase
+![Diagrama sin título](https://github.com/user-attachments/assets/f860eed7-79c2-493c-ba41-52b73b4718a1)
+### структура репозитория
+![Diagrama sin título drawio (2)](https://github.com/user-attachments/assets/700e1946-0d79-4bca-92c7-bf02cd3ac7e4)
+
+основная ветка: последние рабочие версии; два участника
+
+ветка current_server_client: текущие, непроверенные версии; два участника
+
+ветка server_misha: файлы сервера; Эсоно Манге, Ахмед
+
+ветка client_aziz: файлы клиента; Ахмед
+
+ветка Database_and_unittest: базы данных, тесты; Эсоно
+
+Отрасль документов: документация, Эсоно Манге, Аxмед
+
 ## ХОД РАБОТЫ:
-# 10.06- 16.06
+# 10.06- 16.06 
 ## WIKI - ЭСОНО МАНГЕ
 # 15.07_19.07
 ## 1. Обработка авторизации на сервере - ЭСОНО МАНГЕ
