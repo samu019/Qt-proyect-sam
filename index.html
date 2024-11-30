@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú del Restaurante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>РАЗМЕСТИТЕ ЗАКАЗ</h1>
+  </header>
+
+  <main>
+    <div class="contenedor">
+
+      <!-- Sección de Pedido -->
+      <section class="pedido">
+        <h2>ВАШ ЗАКАЗ</h2>
+        <form id="pedido-form" action="/enviar-pedido" method="POST">
+          <div class="resumen">
+            <div class="item">
+              <h3>суп</h3>
+              <input type="text" id="pedido-sopa" name="pedido_sopa" readonly value="No seleccionado">
+            </div>
+            <div class="item">
+              <h3>ОСНОВНОЕ КУРС</h3>
+              <input type="text" id="pedido-principal" name="pedido_principal" readonly value="No seleccionado">
+            </div>
+            <div class="item">
+              <h3>напиток</h3>
+              <input type="text" id="pedido-bebida" name="pedido_bebida" readonly value="No seleccionado">
+            </div>
+            <hr>
+            <p><strong>ОБЩАЯ СТОИМОСТЬ :</strong> <span id="pedido-total">0 ₽</span></p>
+          </div>
+
+          <textarea id="comentarios" name="comentarios" placeholder="Comentarios sobre tu pedido..."></textarea>
+        </form>
+      </section>
+
+      <!-- Menú -->
+      <section class="menu">
+        <h2>меню дня</h2>
+        <h3>суп</h3>
+        <div class="grid sopas"></div>
+
+        <h3>основные блюда</h3>
+        <div class="grid platos"></div>
+
+        <h3>напитки</h3>
+        <div class="grid bebidas"></div>
+      </section>
+
+      <!-- Datos del Cliente -->
+      <section class="datos">
+        <h2>ВАШИ ДАННЫЕ</h2>
+        <form id="datos-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="example@correo.com" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="(+00) 000-000-0000" required>
+
+          <!-- Dirección del Pedido -->
+          <label for="direccion">Dirección de Entrega</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Tu dirección de entrega" required>
+
+          <!-- Tiempo de Pedido -->
+          <label for="tiempo-pedido">Tiempo de Pedido</label>
+          <select id="tiempo-pedido" name="tiempo_pedido" required>
+            <option value="lo_mas_pronto">Lo más pronto posible</option>
+            <option value="hora_seleccionada">Indicar hora</option>
+          </select>
+
+          <!-- Input hora, minutos y segundos -->
+          <div id="hora-seleccionada" class="hora-seleccionada" style="display: none;">
+            <label for="hora">Hora</label>
+            <input type="number" id="hora" name="hora" min="0" max="23" placeholder="Hora (0-23)" required>
+            
+            <label for="minutos">Minutos</label>
+            <input type="number" id="minutos" name="minutos" min="0" max="59" placeholder="Minutos (0-59)" required>
+            
+            <label for="segundos">Segundos</label>
+            <input type="number" id="segundos" name="segundos" min="0" max="59" placeholder="Segundos (0-59)" required>
+          </div>
+
+          <button type="submit" form="pedido-form">Confirmar Pedido</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;">¡Por favor, rellena todos los campos!</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Teléfono de contacto -->
+  <footer>
+    <p>Para más información o dudas, llámanos al <strong>+7 991 671 14 62</strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
